@@ -1,14 +1,14 @@
 /**
  * @param {number[]} nums
+ * @param {number} val
  * @return {number}
  */
-var removeDuplicates = function(nums) {
-    let i = 0;
-    for(let j = 1; j < nums.length; j++) {
-        if(nums[i] !== nums[j]) {
-            i++;
-            nums[i] = nums[j]
+var removeElement = function(nums, val) {
+    let count = 0;
+    for(let i = 0; i < nums.length; i++) {
+        if(nums[i] !== val) {
+            nums[count++] = nums[i]
         }
     }
-    return i+1;
+    return count;
 };
