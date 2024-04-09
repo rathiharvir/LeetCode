@@ -14,7 +14,7 @@ The judge will test your solution with the following code:
 int[] nums = [...]; // Input array
 int val = ...; // Value to remove
 int[] expectedNums = [...]; // The expected answer with correct length.
-                            // It is sorted with no values equaling val.
+// It is sorted with no values equaling val.
 
 int k = removeElement(nums, val); // Calls your implementation
 
@@ -41,3 +41,9 @@ Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
 Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
 It does not matter what you leave beyond the returned k (hence they are underscores).
 ```
+
+**Constraints:**
+
+* 0 <= nums.length <= 100
+* 0 <= nums[i] <= 50
+* 0 <= val <= 100
